@@ -1,0 +1,148 @@
+:root {
+    --lavender: #fae8eb;
+    --Grey: #595959;
+    --Green: #91c499;
+    --Lilac: #eebaed;
+    --Blue: #0a014f;
+}
+/* Initial Sizing is for a Galaxy s9/s9+ device*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: var(--lavender);
+}
+h1{ 
+    text-align: center;
+    background-color: var(--Green);
+    font-size: 125px;
+}
+#main-heading {
+    font-size: 80px;
+    align-self: stretch;
+    padding-left: 20px;
+}
+nav{
+    background-color: var(--Lilac);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+li {
+    list-style: none;
+    font-size: 30px;
+    align-content: stretch;
+    text-align: center;
+}
+a:link{ text-decoration: none;
+}
+
+.work-heading {
+    text-align: center;
+}
+.work-container {
+    display: flex;
+    flex-direction: column;
+   }
+.box{
+    border: violet 4px solid;
+    margin: 10px;
+    width: 100%;
+    height: 100px;
+}
+.headingbox {
+    display: inline;
+    position: absolute;
+    margin-top: 40px;
+    background-color: var(--lavender);
+    border: var(--Green) 2px solid;
+    
+}
+#htmlbox {
+    background-image: url(./images/html.jpg);
+}
+#javabox {
+    background-image: url(./images/java.jpg);
+}
+#reactbox{
+    background-image: url(./images/React.jpg);
+}
+#nodebox {
+    background-image: url(./images/Node.png);
+}
+#serverbox {
+    background-image: url(./images/Server.jpg);
+}
+#about-me {
+    text-align: center;
+    
+}
+
+#work {
+    margin-bottom: -10px;
+}
+#navbar-text {
+    text-decoration: none;
+}
+footer{
+    color: violet;
+  
+}
+/*Used Ipad as reference point for full screen*/
+@media (min-width: 768px) {
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+}
+}
+
+nav {
+     display:flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     font-size: 35px;
+     align-items: center;
+     flex-grow: 1; 
+}
+p{
+    font-size: 20px;
+}
+#main-heading {
+        font-size: 80px;
+}     
+ 
+ .aside-column-size{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: space-evenly;
+    height: 1000px;
+    margin-top: -125px;
+    align-items:flex-start;
+    
+ }
+.column2 {
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    left: 250px;
+    margin-top: 50px;
+}
+.aside-title {
+    border-right: 5px var(--Green) solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 100px;
+    
+}
